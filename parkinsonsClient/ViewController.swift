@@ -11,7 +11,6 @@ import AVFoundation
 import Alamofire
 
 class ViewController: UIViewController {
-
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var registerButton: UIButton!
     @IBOutlet weak var contributeButton: UIButton!
@@ -31,7 +30,10 @@ class ViewController: UIViewController {
     }
     
     @IBOutlet weak var recordButton: UIButton!
-
+    @IBOutlet weak var MapButton: UIButton!
+    @IBAction func gtoMap(sender: AnyObject){
+        UIApplication.sharedApplication().openURL(NSURL(string: "https://www.google.com/maps/search/maps+doctor+near+me/")!)
+    }
     @IBAction func recordButton(sender: AnyObject) {
         let format = NSDateFormatter()
         format.dateFormat="yyyy-MM-dd-HH-mm-ss"

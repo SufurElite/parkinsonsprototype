@@ -27,7 +27,8 @@ class TutorialPageViewController: UIPageViewController {
         return [self.newColoredViewController("1"),
             self.newColoredViewController("2"),
             self.newColoredViewController("3"),
-            self.newColoredViewController("4")]
+            self.newColoredViewController("4"),
+            self.newColoredViewController("5")]
     }()
     
     override func viewDidLoad() {
